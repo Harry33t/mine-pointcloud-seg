@@ -1,10 +1,10 @@
 :root {
-  --bg: #17110d;
-  --panel: #211913;
-  --border: #3a2c20;
-  --text: #f4e9dd;
-  --muted: #b39e89;
-  --accent: #ef9a4a;
+  --bg: #faf5ee;
+  --panel: #ffffff;
+  --border: #e7dccb;
+  --text: #2a2017;
+  --muted: #8c7d6a;
+  --accent: #c25510;
 }
 
 * { box-sizing: border-box; }
@@ -35,7 +35,7 @@ header .author a:hover { text-decoration: underline; }
 
 .viewer {
   position: relative;
-  background: #0d1117;
+  background: #e4dac8;
   border: 1px solid var(--border);
   border-radius: 8px;
   overflow: hidden;
@@ -50,9 +50,10 @@ header .author a:hover { text-decoration: underline; }
 /* stats HUD overlay */
 .hud {
   position: absolute; top: 12px; left: 12px;
-  background: rgba(23, 17, 13, 0.74); backdrop-filter: blur(4px);
+  background: rgba(255, 252, 247, 0.86); backdrop-filter: blur(4px);
   border: 1px solid var(--border); border-radius: 8px;
   padding: 10px 12px; min-width: 200px; pointer-events: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 }
 .hud-title { font-weight: 600; font-size: 13px; margin-bottom: 6px; }
 .hud-row { display: flex; justify-content: space-between; gap: 16px; font-size: 12px; line-height: 1.7; }
@@ -78,11 +79,11 @@ header .author a:hover { text-decoration: underline; }
 /* colour-mode control — a flat segmented look, not boxed buttons */
 .toggle { display: flex; flex-wrap: wrap; gap: 4px; }
 .toggle button {
-  background: rgba(255, 255, 255, 0.04); color: var(--muted);
+  background: rgba(0, 0, 0, 0.05); color: var(--muted);
   border: 0; border-radius: 6px;
   padding: 7px 11px; cursor: pointer; font-size: 12.5px;
 }
-.toggle button:hover { background: rgba(255, 255, 255, 0.09); color: var(--text); }
+.toggle button:hover { background: rgba(0, 0, 0, 0.09); color: var(--text); }
 .toggle button.active { background: var(--accent); color: #fff; }
 
 .legend-title { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
@@ -110,6 +111,6 @@ footer span { color: var(--muted); font-size: 12px; }
 .results-lead { color: var(--muted); font-size: 13px; margin: 0 0 18px; max-width: 60ch; }
 .result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px 32px; }
 .result-fig { margin: 0; }
-.result-fig img { width: 100%; border-radius: 6px; background: #fff; display: block; }
+.result-fig img { width: 100%; border-radius: 6px; background: #fff; display: block; border: 1px solid var(--border); }
 .result-fig figcaption { color: var(--muted); font-size: 12.5px; line-height: 1.6; margin-top: 10px; }
 .result-fig figcaption strong { color: var(--text); font-weight: 600; }
