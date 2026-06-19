@@ -128,7 +128,7 @@ export default function PointCloudViewer({
       dpr={[1, 2]}
       onPointerDown={() => setSpin(false)}
     >
-      <color attach="background" args={["#0b0f14"]} />
+      <color attach="background" args={["#120c08"]} />
       <Scene pc={pc} mode={mode} sizeFactor={sizeFactor} />
       <OrbitControls
         makeDefault

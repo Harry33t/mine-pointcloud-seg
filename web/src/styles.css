@@ -1,10 +1,10 @@
 :root {
-  --bg: #0d1117;
-  --panel: #161b22;
-  --border: #30363d;
-  --text: #e6edf3;
-  --muted: #8b949e;
-  --accent: #2f81f7;
+  --bg: #17110d;
+  --panel: #211913;
+  --border: #3a2c20;
+  --text: #f4e9dd;
+  --muted: #b39e89;
+  --accent: #ef9a4a;
 }
 
 * { box-sizing: border-box; }
@@ -20,7 +20,7 @@ body {
 header { padding: 18px 24px 8px; }
 header h1 { font-size: 20px; margin: 0; }
 header .sub { color: var(--muted); margin: 4px 0 0; font-size: 13px; }
-header .author { color: var(--text); margin: 6px 0 0; font-size: 13px; opacity: 0.85; }
+header .author { color: var(--text); margin: 10px 0 0; font-size: 16px; font-weight: 500; }
 header .author a { color: var(--accent); text-decoration: none; }
 header .author a:hover { text-decoration: underline; }
 
@@ -50,7 +50,7 @@ header .author a:hover { text-decoration: underline; }
 /* stats HUD overlay */
 .hud {
   position: absolute; top: 12px; left: 12px;
-  background: rgba(13, 17, 23, 0.72); backdrop-filter: blur(4px);
+  background: rgba(23, 17, 13, 0.74); backdrop-filter: blur(4px);
   border: 1px solid var(--border); border-radius: 8px;
   padding: 10px 12px; min-width: 200px; pointer-events: none;
 }
