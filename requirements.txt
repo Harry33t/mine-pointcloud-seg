@@ -1,0 +1,32 @@
+# Preprocessing + visualization stack (pure-pip, cross-platform — runs on the
+# Windows dev box and the Linux GPU box alike). The deep-learning training stack
+# (Pointcept / PTv3 / Sonata) is installed separately on the GPU server — see
+# docs/setup_gpu.md.
+
+# dataset download (FRACTAL on the Hugging Face Hub)
+huggingface_hub>=0.23
+
+# point cloud I/O
+laspy[lazrs,laszip]>=2.5
+numpy>=1.24
+scipy>=1.10
+
+# geometry / features / processing
+open3d>=0.18
+jakteristics>=0.6          # per-point eigen-features for geometric weak labels
+cloth-simulation-filter>=1.1.5   # CSF ground filter (import name: CSF)
+
+# bi-temporal change detection (B4)
+py4dgeo>=1.1.0
+
+# weak-label propagation / calibration metrics
+scikit-learn>=1.3
+
+# visualization fallbacks + plotting
+plotly>=5.18
+matplotlib>=3.7
+
+# misc
+tqdm>=4.66
+pyyaml>=6.0
+requests>=2.31
