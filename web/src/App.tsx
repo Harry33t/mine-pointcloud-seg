@@ -97,6 +97,10 @@ export default function App() {
         <p className="sub">
           Self-supervised pre-training + weak labels · cross-site transfer · calibrated per-point uncertainty
         </p>
+        <p className="author">
+          Guanxiong Huang · Northwest A&amp;F University ·{" "}
+          <a href="mailto:harry.huang@nwafu.edu.cn">harry.huang@nwafu.edu.cn</a>
+        </p>
       </header>
 
       <main className="stage">

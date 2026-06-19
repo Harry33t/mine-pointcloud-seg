@@ -1,5 +1,7 @@
 # mine-pointcloud-seg
 
+**Guanxiong Huang · Northwest A&F University · harry.huang@nwafu.edu.cn**
+
 **Label-Efficient Semantic Segmentation of Post-Mining LiDAR Point Clouds**
 
 Self-supervised pre-training and geometric weak labels for segmenting open-pit mine and

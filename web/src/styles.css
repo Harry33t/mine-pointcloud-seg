@@ -20,6 +20,9 @@ body {
 header { padding: 18px 24px 8px; }
 header h1 { font-size: 20px; margin: 0; }
 header .sub { color: var(--muted); margin: 4px 0 0; font-size: 13px; }
+header .author { color: var(--text); margin: 6px 0 0; font-size: 13px; opacity: 0.85; }
+header .author a { color: var(--accent); text-decoration: none; }
+header .author a:hover { text-decoration: underline; }
 
 .stage {
   display: grid;
